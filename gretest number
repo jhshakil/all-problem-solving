@@ -1,0 +1,128 @@
+#include <stdio.h>
+int main() {
+  int a, b, c, d;
+  printf("Enter 4 number: ");
+  scanf("%d%d%d%d", &a, &b, &c, &d);
+  if(a>b && a>c && a>d) {
+    printf("The gratest number is %d\n", a);
+    if(b>c && b>d) {
+      printf("The 2nd gratest number is %d\n", b);
+      if(c>d) {
+        printf("The 3rd gratest number is %d\n", c);
+        printf("The latest number is %d\n", d);
+      } else {
+        printf("The 3rd gratest number is %d\n", d);
+        printf("The latest number is %d\n", c);
+      }
+    } else if(c>b && c>d) {
+      printf("The 2nd gratest number is %d\n", c);
+      if(b>d) {
+        printf("The 3rd gratest number is %d\n", b);
+        printf("The latest number is %d\n", d);
+      } else {
+        printf("The 3rd gratest number is %d\n", d);
+        printf("The latest number is %d\n", b);
+      }
+    } else {
+      printf("The 2nd gratest number is %d\n", d);
+      if(b>c) {
+        printf("The 3rd gratest number is %d\n", b);
+        printf("The latest number is %d\n", c);
+      } else {
+        printf("The 3rd gratest number is %d\n", c);
+        printf("The latest number is %d\n", b);
+      }
+    }
+  } else if(b>a && b>c && b>d) {
+    printf("The gratest number is %d\n", b);
+    if(a>c && a>d) {
+      printf("The 2nd gratest number is %d\n", a);
+      if(c>d) {
+        printf("The 3rd gratest number is %d\n", c);
+        printf("The latest number is %d\n", d);
+      } else {
+        printf("The 3rd gratest number is %d\n", d);
+        printf("The latest number is %d\n", c);
+      }
+    } else if(c>d && c>a) {
+      printf("The 2nd gratest number is %d\n", c);
+      if(d>a) {
+        printf("The 3rd gratest number is %d\n", d);
+        printf("The latest number is %d\n", a);
+      } else {
+        printf("The 3rd gratest number is %d\n", a);
+        printf("The latest number is %d\n", d);
+      }
+    } else {
+      printf("The 2nd gratest number is %d\n", d);
+      if(a>c) {
+        printf("The 3rd gratest number is %d\n", a);
+        printf("The latest number is %d\n", c);
+      } else {
+        printf("The 3rd gratest number is %d\n", c);
+        printf("The latest number is %d\n", a);
+      }
+    }
+  } else if(c>a && c>b && c>d) {
+    printf("The gratest number is %d\n", c);
+    if(b>a && b>d) {
+      printf("The 2nd gratest number is %d\n", b);
+      if(a>d) {
+        printf("The 3rd gratest number is %d\n", a);
+        printf("The latest number is %d\n", d);
+      } else {
+        printf("The 3rd gratest number is %d\n", d);
+        printf("The latest number is %d\n", a);
+      }
+    } else if(a>b && a>d) {
+      printf("The 2nd gratest number is %d\n", a);
+      if(b>d) {
+        printf("The 3rd gratest number is %d\n", b);
+        printf("The latest number is %d\n", d);
+      } else {
+        printf("The 3rd gratest number is %d\n", d);
+        printf("The latest number is %d\n", b);
+      }
+    } else {
+      printf("The 2nd gratest number is %d\n", d);
+      if(b>a) {
+        printf("The 3rd gratest number is %d\n", b);
+        printf("The latest number is %d\n", a);
+      } else {
+        printf("The 3rd gratest number is %d\n", a);
+        printf("The latest number is %d\n", b);
+      }
+    }
+  } else {
+    printf("The gratest number is %d\n", d);
+    if(b>c && b>a) {
+      printf("The 2nd gratest number is %d\n", b);
+      if(c>a) {
+        printf("The 3rd gratest number is %d\n", c);
+        printf("The latest number is %d\n", a);
+      } else {
+        printf("The 3rd gratest number is %d\n", a);
+        printf("The latest number is %d\n", c);
+      }
+    } else if(c>b && c>a) {
+      printf("The 2nd gratest number is %d\n", c);
+      if(b>a) {
+        printf("The 3rd gratest number is %d\n", b);
+        printf("The latest number is %d", a);
+      } else {
+        printf("The 3rd gratest number is %d\n", a);
+        printf("The latest number is %d\n", b);
+      }
+    } else {
+      printf("The 2nd gratest number is %d\n", a);
+      if(b>c) {
+        printf("The 3rd gratest number is %d\n", b);
+        printf("The latest number is %d\n", c);
+      } else {
+        printf("The 3rd gratest number is %d\n", c);
+        printf("The latest number is %d\n", b);
+      }
+    }
+  }
+  return 0;
+}
